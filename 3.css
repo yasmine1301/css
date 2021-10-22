@@ -1,0 +1,211 @@
+body{
+    background-color:aliceblue;
+
+}
+
+
+ul {
+list-style-type:none;
+padding: 0;
+margin:0;
+overflow:inherit;
+background: #333;
+  }
+
+
+    li {
+float:left;
+ }
+
+   li a {
+display:inline-block;
+color: white;
+font-size:15px;
+text-align: center;
+padding: 12px 12px;
+text-decoration: none;
+}
+
+li a:hover{
+background-color:darkcyan;
+}
+
+
+clearfix:after{
+    content:"";
+    display:table-column;
+}
+
+.nav-wrapper{
+width:100%;
+background-color:cadetblue;
+}
+
+.nav-menu{
+position:relative;
+display:inline-block;
+}
+
+.nav-menuli{
+display:inline;
+list-style-type:none;
+}
+
+.sub-menu{
+position:absolute;
+display:none;
+background:cadetblue;
+}
+
+.nav-menu ul li:hover > ul {
+   display:table-column-group;
+background-color:cadetblue;
+}
+
+nav-menu>ul>li:after{
+content:"\25BC";/*escapedunicodeforthedownarrow*/
+font-size:.5em;
+display:table-column;
+position:fixed;
+   }
+
+.social_links
+	{
+		width: 30;
+		display:table-caption;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 100;
+	}
+	.social_con
+	{
+		padding: 1px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+     
+}
+	.social_link
+	{
+		padding: 1px;
+		width: 50px;
+		max-width: 50px;
+		height: 50px;
+		max-height: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items:center;
+		text-decoration: none;
+		transition: 0.4s ease-in-out;
+		border-radius: 100%;
+	}
+	.social_link:hover
+	{
+		transform: rotate(720deg);
+	}
+	.facebook_link
+	{
+		background: #3b5998;
+	}
+	.twitter_link
+	{
+		background: #00acee;
+	}
+	.youtube_link
+	{
+		background: #c4302b;
+	}
+	.rss_link
+	{
+		background: #ee802f;
+	}
+	.vimo_link
+	{
+		background: #00ADF1;
+	}
+	.reddit_link
+	{
+		background: #FF4500;
+	}
+	.linkedin_link
+	{
+		background: #0270AD;
+	}
+	.pinterest_link
+	{
+		background: #E20017;
+	}
+	.instagram_link
+	{
+		background: #D50164;
+	}
+	.social_icon
+	{
+		color:white;
+		font-size: 30px;
+	}
+
+.container ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.container li{position:relative;}
+.container a{
+  display:block;
+  padding:3px 12px;
+  height:24px;
+  line-height:24px;
+  text-decoration:none;
+  white-space:nowrap;
+  background:#fff;
+  color:#5a6063;
+}
+.container a:hover{
+  background:#c0c0c0;
+  color:#fff;
+}
+.menu{
+  position:relative;
+  *zoom:1;
+}
+.menu:after, .menu:before{
+  content:'';
+  display:table;
+  line-height:0;
+}
+.menu:after{clear:both;}
+.menu > li{
+  float:left;
+  margin-right:4px;
+  border:1px solid #fafafa;
+}
+.menu > li:last-child{margin-right:0;}
+.sub-menu, .sub-sub-menu{
+  border:1px solid #fafafa;
+  border-top:0 none;
+}
+.sub-menu li{border-top:1px solid #fafafa;}
+.sub-menu, .sub-sub-menu{
+  position:absolute;
+  left:-999em;
+}
+.sub-menu{top:30px;}
+.sub-sub-menu{top:-1px;}
+.menu > li:hover .sub-menu{left:0;}
+.sub-menu > li:hover .sub-sub-menu{left:100%;}
+.container .arrow:after{
+  content:'\00BB';
+  position:absolute;
+  right:3px;
+  top:0;
+  height:30px;
+  line-height:30px;
+}
+.container .arrow:hover{color:#fff;}
+.container .arrow > a{padding-right:20px;}
